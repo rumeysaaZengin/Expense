@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* background: rgb(60, 60, 60); */
+    background-image: url(images/pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Inconsolata';
+}
+
+.heading {
+    color: rgb(72, 191, 238);
+    text-shadow: 2px 2px 20px rgb(50, 137, 187);
+    letter-spacing: 10px;
+}
+
+.container {
+    min-width: 50vw;
+    max-width: 80vw;
+    height: 100vh;
+    background: white;
+    padding: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.454);
+    opacity: 0.8;
+}
+
+.greet {
+    font-size: 25px;
+}
+
+.greet input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.double {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 30px;
+    font-weight: 800;
+}
+
+.form-check-field {
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(184, 180, 180);
+}
+
+button {
+    background: rgb(92, 170, 243);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(7, 7, 7);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px rgba(70, 159, 233, 0.427);
+    scale: 0.96;
+    transition: all 0.4s;
+}
+
+/* liste alanı */
+#list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+    overflow: auto;
+    padding: 10px;
+    height: 100%;
+}
+
+.expense {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    /* https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.expense .price {
+    color: red;
+}
+
+.expense .btns img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* ödenmiş olan verilecek stiller */
+.payed {
+    opacity: 0.7;
+}
+
+.payed .name {
+    text-decoration: line-through;
+}
+
+.payed .price {
+    color: green;
+}
+
+/* toplam alanı */
+.sum {
+    background-color: rgb(171, 123, 180);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#sum-info {
+    color: rgb(245, 245, 57);
+}
+
+select {
+    width: 30%;
+    margin: 0 auto;
+    padding: 5px;
+}
